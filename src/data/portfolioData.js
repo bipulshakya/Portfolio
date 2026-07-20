@@ -24,22 +24,22 @@ export const stats = [
 
 export const education = [
   {
-    degree: "Bachelor of Education (B.Ed)",
-    institution: "Tribhuvan University",
-    years: "2020 – 2024",
-    gpa: "",
-    honors: "Major in Computer Science Education",
-    description:
-      "Focused on pedagogy, curriculum design, and instructional technology for secondary and higher-secondary level computer science.",
-  },
-  {
-    degree: "Bachelor of Science in Computer Science (BSc. CSIT)",
-    institution: "Tribhuvan University",
-    years: "2018 – 2022",
+    degree: "NEB +2 in Computer Science",
+    institution: "National Examination Board (NEB)",
+    years: "2021 – 2023",
     gpa: "",
     honors: "",
     description:
-      "Core coursework in data structures, algorithms, database systems, software engineering, and networking.",
+      "Completed higher secondary education with a focus on computer science fundamentals.",
+  },
+  {
+    degree: "BSc. CSIT",
+    institution: "Tribhuvan University",
+    years: "2023 – Present",
+    gpa: "",
+    honors: "",
+    description:
+      "Studying core coursework in software engineering, databases, networking, and computer systems.",
   },
 ];
 
@@ -71,7 +71,7 @@ export const technicalSkills = [
     category: "Languages",
     skills: [
       { name: "JavaScript", level: 90 },
-      { name: "Python", level: 85 },
+      { name: "C", level: 70 },
       { name: "Java", level: 70 },
       { name: "C++", level: 65 },
       { name: "TypeScript", level: 75 },
@@ -84,7 +84,7 @@ export const technicalSkills = [
       { name: "React", level: 90 },
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 80 },
-      { name: "Django", level: 70 },
+      { name: ".NET", level: 70 },
       { name: "Next.js", level: 65 },
     ],
   },
@@ -104,7 +104,7 @@ export const technicalSkills = [
       { name: "Git & GitHub", level: 90 },
       { name: "Docker", level: 65 },
       { name: "VS Code", level: 95 },
-      { name: "Linux CLI", level: 75 },
+      { name: "Azure", level: 60 },
       { name: "Figma", level: 60 },
     ],
   },
@@ -112,47 +112,47 @@ export const technicalSkills = [
 
 export const projects = [
   {
-    title: "EduTrack LMS",
+    title: "Summit School Website",
     description:
-      "A full-featured learning management system for schools — course creation, assignments, grading, and student progress tracking.",
-    techStack: ["React", "Node.js", "MongoDB", "Socket.io"],
-    role: "Full Stack Developer",
-    category: "education",
-    github: "https://github.com/bipulshakya",
-    live: "",
-    image: null,
-  },
-  {
-    title: "DevConnect",
-    description:
-      "A social networking platform for developers to share projects, collaborate, and find job opportunities in the tech community.",
-    techStack: ["React", "Express.js", "PostgreSQL", "JWT"],
-    role: "Full Stack Developer",
-    category: "web",
-    github: "https://github.com/bipulshakya",
-    live: "",
-    image: null,
-  },
-  {
-    title: "QuizMaster Pro",
-    description:
-      "An interactive quiz and assessment platform for teachers — auto-grading, analytics dashboard, and question bank management.",
-    techStack: ["React", "Django", "PostgreSQL", "Chart.js"],
-    role: "Lead Developer",
-    category: "education",
-    github: "https://github.com/bipulshakya",
-    live: "",
-    image: null,
-  },
-  {
-    title: "TaskFlow",
-    description:
-      "A project management tool with Kanban boards, real-time collaboration, and team analytics — inspired by Trello.",
-    techStack: ["Next.js", "Firebase", "Tailwind CSS"],
+      "A modern school website built to showcase programs, admissions, and institutional information with a polished, responsive experience.",
+    techStack: ["React", "CSS", "Vite"],
     role: "Frontend Developer",
     category: "web",
-    github: "https://github.com/bipulshakya",
-    live: "",
+    github: "",
+    live: "https://bipulshakya.github.io/summit-school-website/",
+    image: null,
+  },
+  {
+    title: "TODO App",
+    description:
+      "A simple and efficient task management app focused on daily planning, reminders, and a clean user experience.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    role: "Frontend Developer",
+    category: "web",
+    github: "",
+    live: "https://bipulshakya.github.io/TODO-App/",
+    image: null,
+  },
+  {
+    title: "Jewellery Management System",
+    description:
+      "A business-focused inventory and management solution for tracking jewellery products, stock, and customer records.",
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    role: "Full Stack Developer",
+    category: "web",
+    github: "",
+    live: "https://bipulshakya.github.io/Jewellery-Management-System/",
+    image: null,
+  },
+  {
+    title: "AI Powered Learning Assistant App",
+    description:
+      "An intelligent learning companion that helps users explore concepts, organize study materials, and enhance their learning journey.",
+    techStack: ["React", "Tailwind CSS", "AI APIs"],
+    role: "Full Stack Developer",
+    category: "web",
+    github: "",
+    live: "https://bipulshakya.github.io/Ai-Powered-Learning-Assistant-App/",
     image: null,
   },
 ];

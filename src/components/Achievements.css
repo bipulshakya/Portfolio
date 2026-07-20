@@ -1,0 +1,60 @@
+/* ---------- Achievements Section ---------- */
+.achievements {
+  background: var(--clr-bg-alt);
+}
+
+.ach__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ach__card {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-xl);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.ach__card:hover {
+  border-color: var(--clr-teal);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.ach__icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.1), rgba(245, 158, 11, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+}
+
+.ach__icon {
+  font-size: 1.8rem;
+}
+
+.ach__title {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-sm);
+}
+
+.ach__desc {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .ach__grid {
+    grid-template-columns: 1fr;
+  }
+}

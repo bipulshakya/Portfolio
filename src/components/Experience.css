@@ -1,0 +1,135 @@
+/* ---------- Experience Section ---------- */
+
+/* Timeline */
+.exp__timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exp__timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--clr-teal), var(--clr-gold), var(--clr-teal));
+  border-radius: 3px;
+}
+
+/* Item */
+.exp__item {
+  position: relative;
+  width: 50%;
+  padding-right: var(--space-3xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.exp__item--right {
+  margin-left: 50%;
+  padding-right: 0;
+  padding-left: var(--space-3xl);
+}
+
+/* Dot */
+.exp__dot {
+  position: absolute;
+  right: -16px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--clr-surface);
+  border: 3px solid var(--clr-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.exp__item--right .exp__dot {
+  right: auto;
+  left: -16px;
+}
+
+/* Card */
+.exp__card {
+  cursor: default;
+}
+
+.exp__card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.exp__role {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+}
+
+.exp__institution {
+  font-size: var(--fs-sm);
+  color: var(--clr-teal);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Bullets */
+.exp__bullets {
+  margin-bottom: var(--space-md);
+}
+
+.exp__bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.exp__bullet-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--clr-teal);
+}
+
+.exp__type-tag {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--clr-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .exp__timeline::before {
+    left: 18px;
+  }
+
+  .exp__item,
+  .exp__item--right {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 48px;
+    padding-right: 0;
+  }
+
+  .exp__dot,
+  .exp__item--right .exp__dot {
+    left: 2px;
+    right: auto;
+  }
+}

@@ -1,0 +1,150 @@
+/* ---------- Skills Section ---------- */
+
+/* Tabs */
+.skills__tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-3xl);
+}
+
+.skills__tab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--clr-surface);
+  color: var(--clr-text-muted);
+  border: 2px solid var(--clr-border);
+  transition: all var(--transition-base);
+}
+
+.skills__tab:hover {
+  border-color: var(--clr-teal);
+  color: var(--clr-teal);
+}
+
+.skills__tab--active {
+  background: linear-gradient(135deg, var(--clr-teal), var(--clr-teal-dark));
+  color: #ffffff;
+  border-color: var(--clr-teal);
+  box-shadow: var(--shadow-teal);
+}
+
+.skills__tab-icon {
+  font-size: 1.2rem;
+}
+
+/* Teaching Skills Grid */
+.skills__teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills__teaching-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.4s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills__teaching-card:hover {
+  border-color: var(--clr-teal);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.skills__teaching-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.skills__teaching-name {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* Technical Skills */
+.skills__technical {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills__category {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.skills__category-title {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--clr-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.skills__category-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, var(--clr-teal), var(--clr-gold));
+  border-radius: 2px;
+}
+
+.skill-bar-percent {
+  color: var(--clr-teal);
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .skills__tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__tab {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .skills__technical {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__teaching-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
